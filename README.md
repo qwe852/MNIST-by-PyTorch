@@ -13,6 +13,13 @@ torch.tensor()
 torch.zeros()  
 torch.ones()  
 torch.randn()  
-arange(start=0, end, step=1, *, out=None, dtype=None, layout=torch.strided, device=None, requires_grad=False) -> Tensor
-
+arange(start=0, end, step=1, *, out=None, dtype=None, layout=torch.strided, device=None, requires_grad=False) -> Tensor  
+按照步长依次生成[start,end)范围内的数列
+```python
+>>> torch.arange(5)  # 默认以 0 为起点
+    tensor([ 0,  1,  2,  3,  4])
+    torch.arange(1, 4)  # 默认间隔为 1
+    tensor([ 1,  2,  3])
+    torch.arange(1, 2.5, 0.5)  # 指定间隔 0.5
+    tensor([ 1.0000,  1.5000,  2.0000])
 
